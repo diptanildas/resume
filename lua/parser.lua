@@ -3,7 +3,7 @@ require("lualibs.lua")
 function getJsonFromFile(file)
   local fileHandle = io.open(file)
   local jsonString = fileHandle:read('*a')
-  fileHandle.close()
+  fileHandle:close()
   local jsonData = utilities.json.tolua(jsonString)
   return jsonData
 end
