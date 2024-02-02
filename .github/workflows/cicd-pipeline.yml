@@ -16,7 +16,7 @@ jobs:
           root_file: main.tex
           latexmk_use_lualatex: true
           extra_fonts: |
-            ./fonts/garamond/**
+            ./fonts/garamond/ugmm8a.pfb
 
       - name: Rename PDF
         run: mv main.pdf ${{ env.FILE_NAME }}
