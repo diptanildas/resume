@@ -1,0 +1,23 @@
+[
+  {
+      "school": "RCC Institute of Information Technology",
+      "university": "under West Bengal University of Technology",
+      "school_location": "Kolkata, India",
+      "degree": "Bachelor of Technology in Computer Science \\& Engineering",
+      "time_period": "2012 - 2016"
+  },
+  {
+    "school": "A.K. Ghosh Memorial School",
+    "university": "under West Bengal Council Of Higher Secondary Education",
+    "school_location": "Kolkata, India",
+    "degree": "12th Board",
+    "time_period": "2011"
+  },
+  {
+    "school": "Andhra Association School",
+    "university": "under West Bengal Board Of Secondary Education",
+    "school_location": "Kolkata, India",
+    "degree": "10th Board",
+    "time_period": "2009"
+  }
+]

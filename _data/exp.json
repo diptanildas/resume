@@ -1,0 +1,53 @@
+[
+    {
+        "company": "Publicis Sapient",
+        "company_location": "Bangalore, India (Remote)",
+        "role": "Senior Associate Technology L1",
+        "time_duration": "Aug 2023 - Present",
+        "details": [
+            {
+                "description": "Working for a Healthcare client to manage huge volumes of data."
+            },
+            {
+                "description": "The application involves \\textbf{200+} Java Spring Boot microservices"
+            }
+        ]
+    },
+    {
+        "company": "FlipItMoney (formerly FlipItNews)",
+        "company_location": "Gurgaon, India",
+        "role": "Technical Head (CTO \\& Co-founder)",
+        "time_duration": "May 2021 - Aug 2023",
+        "details": [
+            {
+                "description": "Architected, developed, and oversaw end-to-end technical implementation of the FlipItMoney App, serving a user base of \\textbf{1.2 million} users."
+            },
+            {
+                "description": "Hands on experience in implementing with the full tech stack of the company throughout the \\textbf{2.5 years} tenure at the company."
+            },
+            {
+                "description": "Raised a total of \\textbf{\\$2.87 million} funding with \\textbf{Kotak Securities} being one of the investors."
+            },
+            {
+                "description": "Managed a team of \\textbf{9 members} of Tech resources which included both Junior and Senior members from Backend, Frontend and Infrastructure."
+            },
+            {
+                "description": "\\textbf{More Information about FlipItMoney visit the following links: \\href{https://www.crunchbase.com/organization/flipitnews}{Crunchbase} | \\href{https://tracxn.com/d/companies/flipitmoney/__Iinzg5xvMxdZx4-c3tHKfhSZEB3c3PksIv2ex9kKl0A}{Tracxn}}."
+            }
+        ]
+    },
+    {
+        "company": "Tata Consultancy Services Limited",
+        "company_location": "Kolkata, India",
+        "role": "IT Analyst",
+        "time_duration": "Nov 2016 - Apr 2021",
+        "details": [
+            {
+                "description": "Architected and built the Xcelerate application for TCS from scratch as a Full Stack Java Developer, revolutionizing the way \\textbf{4 Lakhs} employees accessed and utilized crucial resources."
+            },
+            {
+                "description": "Migrated a legacy application which saved the team \\textbf{1 year} of revamp efforts."
+            }
+        ]
+    }
+]

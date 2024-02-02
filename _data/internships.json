@@ -1,0 +1,33 @@
+[
+    {
+        "company": "Catalyst Lab",
+        "company_location": "Bangalore, India (Remote)",
+        "role": "Software Developer",
+        "time_duration": "Jul 2015 - Jan 2016",
+        "details": [
+            {
+                "description": "Developed a user-friendly native Android App which served \\textbf{20 B2B users}."
+            },
+            {
+                "description": "Reprogrammed the existing Restful API in PHP which ran on a low cost server resulting in \\textbf{70\\%} cost savings."
+            },
+            {
+                "description": "The app served as MVP for the company which led to further ideation of the product."
+            }
+        ]
+    },
+    {
+        "company": "Almozz Business Solution Pvt. Ltd.",
+        "company_location": "Kolkata, India",
+        "role": "Software Developer",
+        "time_duration": "Nov 2015 - Apr 2016",
+        "details": [
+            {
+                "description": "Built the portal in PHP from ground up which ran on a low cost server."
+            },
+            {
+                "description": "Frontend technologies involved CSS, JavaScript, jQuery and Bootstrap 3 helped with responsiveness."
+            }
+        ]
+    }
+]

@@ -1,0 +1,95 @@
+[
+    {
+        "name": "Diptanil Das",
+        "subheading": "Full Stack Developer / 7\+ Years Experience",
+        "email": "diptanildas93@gmail.com",
+        "email2": "diptanil.dascs@gmail.com",
+        "phone": "\+91-7980825932",
+        "linkedin":"",
+        "articles" : [
+            "Hello",
+            "World!"
+        ],
+        "technologies": [
+            {
+                "technology": "Java"
+            },
+            {
+                "technology": "JavaScript"
+            },
+            {
+                "technology": "SQL"
+            },
+            {
+                "technology": "NoSQL"
+            },
+            {
+                "technology": "REST"
+            },
+            {
+                "technology": "Microservices"
+            }
+        ],
+        "frameworks": [
+            {
+                "framework": "Spring Boot"
+            },
+            {
+                "framework": "Spring Framework"
+            },
+            {
+                "framework": "Flutter"
+            },
+            {
+                "framework": "Ionic"
+            },
+            {
+                "framework": "Angular"
+            },
+            {
+                "framework": "Laravel"
+            }
+        ],
+        "tools": [
+            {
+                "tool": "PostgreSQL"
+            },
+            {
+                "tool": "MySQL"
+            },
+            {
+                "tool": "MongoDB"
+            },
+            {
+                "tool": "AWS"
+            },
+            {
+                "tool": "Redis"
+            },
+            {
+                "tool": "Kafka"
+            },
+            {
+                "tool": "Git"
+            },
+            {
+                "tool": "Maven"
+            },
+            {
+                "tool": "NPM"
+            },
+            {
+                "tool": "Docker"
+            },
+            {
+                "tool": "JIRA"
+            },
+            {
+                "tool": "Agile Methodologies"
+            },
+            {
+                "tool": "CI/CD"
+            }
+        ]
+    }
+]
