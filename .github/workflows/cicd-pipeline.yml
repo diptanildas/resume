@@ -10,16 +10,13 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v3
 
-      - name: Install Fonts
-        run: |
-          wget https://tug.org/fonts/getnonfreefonts/install-getnonfreefonts
-          getnonfreefonts -a
-
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
           root_file: main.tex
           latexmk_use_lualatex: true
+          extra_fonts: |
+            ./fonts/garamond/**
 
       - name: Rename PDF
         run: mv main.pdf ${{ env.FILE_NAME }}
