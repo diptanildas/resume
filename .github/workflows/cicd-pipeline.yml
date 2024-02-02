@@ -13,7 +13,6 @@ jobs:
       - name: Install Fonts
         run: |
           wget https://tug.org/fonts/getnonfreefonts/install-getnonfreefonts
-          texlua install-getnonfreefonts
           getnonfreefonts -a
 
       - name: Compile LaTeX document
