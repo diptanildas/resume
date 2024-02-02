@@ -56,7 +56,7 @@ function printHeading(file)
 
     --tex.print("\\textbf{\\href")
     --tex.print("{" .. value["website"] .. "/}")
-    tex.print("{\\Large " .. value["name"] .. "}}")
+    tex.print("{\\Large " .. value["name"] .. "}")
     tex.print(" & Email : \\href")
     tex.print("{mailto:" .. value["email"] .. "}")
     tex.print("{" .. value["email"] .. "}\\\\")
