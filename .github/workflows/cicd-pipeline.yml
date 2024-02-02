@@ -4,18 +4,23 @@ on: [push, workflow_dispatch]
 jobs:
   build_latex:
     runs-on: ubuntu-latest
+    env:
+      FILE_NAME: "Diptanil_Das_Resume_Java_Full_Stack_Developer.pdf"
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v3
 
       - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v2
+        uses: xu-cheng/latex-action@v3
         with:
           root_file: main.tex
           latexmk_use_lualatex: true
+
+      - name: Rename PDF
+        run: mv main.pdf ${{ env.FILE_NAME }}
 
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
         with:
           name: PDF
-          path: Diptanil_Das_Resume_Java_Full_Stack_Developer.pdf
+          path: ${{ env.FILE_NAME }}
