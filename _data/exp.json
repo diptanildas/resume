@@ -6,10 +6,10 @@
         "time_duration": "Aug 2023 - Present",
         "details": [
             {
-                "description": "Working for a Healthcare client to manage huge volumes of data."
+                "description": "Working for a Healthcare client to manage huge volumes of data which is critical to run journey campaigns"
             },
             {
-                "description": "The application involves \\textbf{200+} Java Spring Boot microservices"
+                "description": "The application involves \\textbf{200+} Java Spring Boot microservices, Azure Functions, Kafka and DataBricks"
             }
         ]
     },
