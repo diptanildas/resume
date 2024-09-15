@@ -76,10 +76,10 @@ function printList(file, primary, secondary)
   for key, value in pairs(json) do
     for key, value in pairs(value[primary]) do
       if (first) then
-        tex.print(value[secondary])
+        tex.sprint(value[secondary])
         first = false
       else
-        tex.print(", ", value[secondary])
+        tex.sprint(", ", value[secondary])
       end
     end
   end
