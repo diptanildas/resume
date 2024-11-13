@@ -9,7 +9,7 @@
                 "description": "Developed a user-friendly native Android App which served \\textbf{20 B2B users}."
             },
             {
-                "description": "Reprogrammed the existing Restful API in PHP which ran on a low cost server resulting in \\textbf{70\\%} cost savings."
+                "description": "Reprogrammed the existing Restful API in PHP which ran on a low-cost server resulting in \\textbf{70\\%} cost savings."
             },
             {
                 "description": "The app served as MVP for the company which led to further ideation of the product."
@@ -23,7 +23,7 @@
         "time_duration": "Nov 2014 - Apr 2015",
         "details": [
             {
-                "description": "Built the portal in PHP from ground up which ran on a low cost server."
+                "description": "Built the portal in PHP from ground up which ran on a low-cost server."
             },
             {
                 "description": "Frontend technologies involved CSS, JavaScript, jQuery and Bootstrap 3 helped with responsiveness."
