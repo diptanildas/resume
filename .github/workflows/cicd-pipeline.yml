@@ -18,15 +18,6 @@ jobs:
         with:
           root_file: main.tex
           latexmk_use_lualatex: true
-          # mathdesign/urw-garamond loads the URW GaramondNo8 Type 1 fonts
-          # through kpathsea, so the .pfb files must live in a texmf tree;
-          # fontconfig-based installation (extra_fonts) is not enough.
-          pre_compile: |
-            TEXMF="$(kpsewhich -var-value TEXMFLOCAL)"
-            mkdir -p "$TEXMF/fonts/type1/urw/garamond" "$TEXMF/fonts/afm/urw/garamond"
-            cp fonts/extracted/garamond/*.pfb "$TEXMF/fonts/type1/urw/garamond/"
-            cp fonts/extracted/garamond/*.afm "$TEXMF/fonts/afm/urw/garamond/"
-            mktexlsr
 
       - name: Rename PDF
         run: mv main.pdf ${{ env.FILE_NAME }}
