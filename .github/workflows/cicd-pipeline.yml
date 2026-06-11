@@ -15,8 +15,10 @@ jobs:
         with:
           root_file: main.tex
           latexmk_use_lualatex: true
-          extra_fonts: |
-            ./fonts/garamond.zip
+          pre_compile: |
+            curl -fsSL https://www.tug.org/fonts/getnonfreefonts/install-getnonfreefonts -o install-getnonfreefonts
+            texlua install-getnonfreefonts
+            getnonfreefonts --sys garamond
 
       - name: Rename PDF
         run: mv main.pdf ${{ env.FILE_NAME }}
