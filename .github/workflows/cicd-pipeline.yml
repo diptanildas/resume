@@ -16,9 +16,29 @@ jobs:
           root_file: main.tex
           latexmk_use_lualatex: true
           pre_compile: |
-            curl -fsSL https://www.tug.org/fonts/getnonfreefonts/install-getnonfreefonts -o install-getnonfreefonts
-            texlua install-getnonfreefonts
-            getnonfreefonts --sys garamond
+            python3 - <<'PYEOF'
+            import zipfile, io, os
+            TEXMF = "/opt/texlive/texmf-local"
+            with zipfile.ZipFile("fonts/garamond.zip") as outer:
+                for name in outer.namelist():
+                    base = os.path.basename(name)
+                    if base.endswith(".pfb"):
+                        dest = f"{TEXMF}/fonts/type1/urw/garamond/{base}"
+                        os.makedirs(os.path.dirname(dest), exist_ok=True)
+                        with outer.open(name) as src, open(dest, "wb") as dst:
+                            dst.write(src.read())
+                    elif base.endswith(".afm"):
+                        dest = f"{TEXMF}/fonts/afm/urw/garamond/{base}"
+                        os.makedirs(os.path.dirname(dest), exist_ok=True)
+                        with outer.open(name) as src, open(dest, "wb") as dst:
+                            dst.write(src.read())
+                with outer.open("garamond/ugm.zip") as f:
+                    ugm_data = f.read()
+            with zipfile.ZipFile(io.BytesIO(ugm_data)) as ugm:
+                ugm.extractall(TEXMF)
+            PYEOF
+            mktexlsr
+            updmap-sys --enable Map ugm.map
 
       - name: Rename PDF
         run: mv main.pdf ${{ env.FILE_NAME }}
