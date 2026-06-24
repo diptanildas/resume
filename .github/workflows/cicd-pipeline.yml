@@ -10,6 +10,9 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v4
 
+      - name: Extract Garamond fonts
+        run: unzip -o fonts/garamond.zip -d fonts/extracted
+
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:

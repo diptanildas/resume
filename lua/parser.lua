@@ -52,12 +52,22 @@ end
 function printHeading(file)
   local json = getJsonFromFile(file)
   for key, value in pairs(json) do
-    tex.print("\\begin{center}")
-    tex.print("{\\Large \\textbf{" .. value["name"] .. "}}\\\\[3pt]")
-    tex.print("{\\large " .. value["subheading"] .. "}\\\\[4pt]")
-    tex.print(value["location"] .. " \\textbullet{} \\href{mailto:" .. value["email"] .. "}{" .. value["email"] .. "} \\textbullet{} " .. value["phone"] .. "\\\\[2pt]")
-    tex.print("LinkedIn: \\href{https://" .. value["linkedin"] .. "}{" .. value["linkedin"] .. "} \\textbullet{} GitHub: \\href{https://" .. value["github"] .. "}{" .. value["github"] .. "}")
-    tex.print("\\end{center}")
+    tex.print("\\begin{tabular*}{\\textwidth}{l@{\\extracolsep{\\fill}}r}")
+
+    tex.print("{\\Large " .. value["name"] .. "}")
+    tex.print(" & Email : \\href")
+    tex.print("{mailto:" .. value["email"] .. "}")
+    tex.print("{" .. value["email"] .. "}\\\\")
+
+    tex.print("{" .. value["subheading"] .. "}")
+    tex.print(" & Mobile : " .. value["phone"] .. "\\\\")
+
+    tex.print(value["location"])
+    tex.print(" & LinkedIn: \\href{https://" .. value["linkedin"] .. "}{" .. value["linkedin"] .. "}\\\\")
+
+    tex.print(" & GitHub: \\href{https://" .. value["github"] .. "}{" .. value["github"] .. "}\\\\")
+
+    tex.print("\\end{tabular*}")
   end
 end
 
