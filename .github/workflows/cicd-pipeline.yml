@@ -5,13 +5,10 @@ jobs:
   build_latex:
     runs-on: ubuntu-latest
     env:
-      FILE_NAME: "Diptanil_Das_Resume_Java_Full_Stack_Developer.pdf"
+      FILE_NAME: "Diptanil_Das_Resume.pdf"
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v4
-
-      - name: Extract Garamond fonts
-        run: unzip -o fonts/garamond.zip -d fonts/extracted
 
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3

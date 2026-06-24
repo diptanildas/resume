@@ -1,21 +1,22 @@
 [
     {
         "name": "Diptanil Das",
-        "subheading": "Full Stack Developer / 8\+ Years Experience",
+        "subheading": "Senior Software Engineer \\textbar{} Full-Stack / Backend \\textbar{} 9+ Years",
+        "summary": "Senior software engineer with 9+ years building full-stack and backend systems across fintech, healthcare, and enterprise. Deep experience in Java, Spring Boot, microservices, and large-scale data and communication pipelines (Kafka, Spark, Databricks). Built and scaled a fintech platform to 1.2 million users and have owned systems end-to-end from architecture to production.",
+        "location": "Kolkata, India",
         "email": "diptanildas93@gmail.com",
-        "email2": "diptanil.dascs@gmail.com",
-        "phone": "\+91-7980825932",
-        "linkedin":"",
-        "articles" : [
-            "Hello",
-            "World!"
-        ],
+        "phone": "+91-7980825932",
+        "linkedin": "linkedin.com/in/diptanil-das",
+        "github": "github.com/diptanildas",
         "technologies": [
             {
                 "technology": "Java"
             },
             {
                 "technology": "JavaScript"
+            },
+            {
+                "technology": "Python"
             },
             {
                 "technology": "SQL"
@@ -97,7 +98,30 @@
                 "tool": "Agile Methodologies"
             },
             {
-                "tool": "CI/CD"
+                "tool": "Continuous Integration/Continuous Deployment (CI/CD)"
+            },
+            {
+                "tool": "Databricks"
+            },
+            {
+                "tool": "Spark"
+            }
+        ],
+        "aitools": [
+            {
+                "aitool": "Prompt Engineering"
+            },
+            {
+                "aitool": "GitHub Copilot"
+            },
+            {
+                "aitool": "OpenAI Codex"
+            },
+            {
+                "aitool": "Claude AI"
+            },
+            {
+                "aitool": "AI-assisted Development"
             }
         ]
     }

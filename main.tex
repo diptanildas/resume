@@ -14,7 +14,8 @@
 \usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage{fancyhdr}
-\usepackage[urw-garamond]{mathdesign}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Termes} % Web-safe (Times New Roman-equivalent); swap to "Carlito" for a Calibri look
 \RequirePackage{luatex85}
 \usepackage{pdfcomment}
 \usepackage{luacode}
@@ -90,6 +91,13 @@ require("lua/parser.lua")
 %-------------------------------------------
 \directlua{printHeading("_data/personal.json")}
 
+% Print Summary
+%-------------------------------------------
+\section{Summary}
+  \resumeSubHeadingListStart
+    \item{\small \directlua{printSummary("_data/personal.json")}}
+  \resumeSubHeadingListEnd
+
 % Print Skills
 %-------------------------------------------
 \section{Skills}
@@ -100,12 +108,14 @@ require("lua/parser.lua")
       \textbf{Frameworks}{: \directlua{printList("_data/personal.json", "frameworks", "framework")}}
       \\
       \textbf{Tools}{: \directlua{printList("_data/personal.json", "tools", "tool")}}
+      \\
+      \textbf{AI Tools}{: \directlua{printList("_data/personal.json", "aitools", "aitool")}}
       }
   \resumeSubHeadingListEnd
 
 % Print Experience
 %-------------------------------------------
-\section{Experiences}
+\section{Work Experience}
   \resumeSubHeadingListStart
   	\directlua{printExpItems("_data/exp.json")}
   \resumeSubHeadingListEnd
@@ -115,19 +125,6 @@ require("lua/parser.lua")
 \section{Internships}
   \resumeSubHeadingListStart
   	\directlua{printExpItems("_data/internships.json")}
-  \resumeSubHeadingListEnd
-
-% Print New Mentions
-%-------------------------------------------
-\section{Mentions in News Articles}
-  \resumeSubHeadingListStart
-    \item {
-        \textbf{YourStory:} \url{https://yourstory.com/2021/12/flipitnews-simplifying-business-finance-investment}
-        \\
-        \textbf{Inc42:} \url{https://inc42.com/startups/30-startups-to-watch-startups-that-caught-our-eye-in-april-2022/}
-        \\
-        \textbf{ANI News:} \url{https://www.aninews.in/news/business/business/flipitnews-community-driven-smart-investment-platform-raises-18-crore-as-seed-investment20210601134902/}
-    }
   \resumeSubHeadingListEnd
 
 % Print Education
