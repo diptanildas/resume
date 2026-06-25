@@ -17,18 +17,9 @@ jobs:
           latexmk_use_lualatex: true
           extra_system_packages: unzip
           pre_compile: |
-            set -e
-            DEST="$(kpsewhich -var-value TEXMFLOCAL)/fonts/type1/urw/garamond"
-            mkdir -p "$DEST"
-            for M in \
-              https://ctan.math.illinois.edu/fonts/urw/garamond.zip \
-              https://ftp.fau.de/ctan/fonts/urw/garamond.zip \
-              https://mirrors.ctan.org/fonts/urw/garamond.zip ; do
-              echo "Fetching Garamond from $M"
-              curl -fsSL --connect-timeout 25 --retry 2 -o /tmp/garamond.zip "$M" && break
-            done
-            unzip -o -j /tmp/garamond.zip 'garamond/ugm*.pfb' -d "$DEST"
-            mktexlsr
+            curl -fsSL https://www.tug.org/fonts/getnonfreefonts/install-getnonfreefonts -o install-getnonfreefonts
+            texlua install-getnonfreefonts
+            getnonfreefonts --sys garamond
 
       - name: Rename PDF
         run: mv main.pdf ${{ env.FILE_NAME }}
